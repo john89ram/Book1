@@ -1,0 +1,8 @@
+Integers - Whole number processed as normal math 
+Addition        2+3 = 5
+Subtraction     3-2 = 1
+Multiplication  2*3 = 6
+Division        3/2 = 1.5
+Exponents       3**2 = 9 | 3**3 = 27 | 10**6 = 1000000
+
+Floas - Numbers with decimal points 
