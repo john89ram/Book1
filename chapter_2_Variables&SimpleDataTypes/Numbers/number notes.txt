@@ -5,4 +5,30 @@ Multiplication  2*3 = 6
 Division        3/2 = 1.5
 Exponents       3**2 = 9 | 3**3 = 27 | 10**6 = 1000000
 
-Floas - Numbers with decimal points 
+Floats - Numbers with decimal points 
+0.1+0.1 = 0.2
+0.2+0.2 = 0.4
+2*0.1 = 0.2
+2*0.2 = 0.4
+
+When dividing number if they are Integers (even if the result is a whole number) will end with a Float 
+4/2 = 2.0
+
+When mixing Integers and Floats in any operations the result will always be a Float
+1+2.0 = 3.0
+2*3.0 = 6.0
+3.0**2 = 9.0
+
+Using underscores to make it easier to read large numbers. (The underscores are completely ignored by Python3.6+)
+1000 = 1_000 or 10_00
+
+This will help with code using large numbers
+universe_age = 14_000_000_000
+print(universe_age)
+14000000000
+
+Assigning multiple variables - use this to shorten your code.
+x,y,z = 0,0,0
+
+Constant - A constant is a variables that never changes its vaule. These are represented with all capital letters 
+MAX_CONNECTIONS = 5000
