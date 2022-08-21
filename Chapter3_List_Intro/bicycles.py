@@ -11,4 +11,12 @@ bicycles = ['trek','cannondale','redline','specialized']
 #print(bicycles[0])
 
 #You can also use the format from Ch.2 tools to make outputs professional for the end-user.
-print(bicycles[1].title())
+#print(bicycles[1].title())
+#print(bicycles[3].title())
+
+#When a list gets large to call easily you can make the call with negative numbers.
+#print(bicycles[-1])
+
+#Creating a message using a list and calling values.
+message = f"My first bike was a {bicycles[3].title()} bicycle."
+print(message)
