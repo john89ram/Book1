@@ -55,3 +55,16 @@ tech_2 = contigo_techs.pop(4)
 #print(f"{tech_2.title()} is our current Tech 2 and as such able to do On-site visits.")
 #print(contigo_techs[5])
 
+#Elements can also be removed by their value, this is useful if you do not know the index. 
+contigo_techs.remove('Tim')
+print(contigo_techs)
+
+    #You can also assign the element a variable and call on the variable when removing as well.
+contigo_techs.append('Tim')
+print(contigo_techs)
+
+most_feared_tech = 'Tim'
+contigo_techs.remove(most_feared_tech)
+
+print(f"No one messes with {most_feared_tech.title()} in the office, for fear of being destroyed.")
+print(contigo_techs)
