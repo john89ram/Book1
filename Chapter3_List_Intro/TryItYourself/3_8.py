@@ -7,9 +7,6 @@
     #6. Sort the list with the sort() method / Print
     #7. Sort the list in reverse with the sort() method / Print 
 
-from xml.sax.saxutils import prepare_input_source
-
-
 places2visit = ['singapore','japan','france','new york','england']
 #1
 print(places2visit)
