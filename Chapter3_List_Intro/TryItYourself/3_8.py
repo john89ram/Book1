@@ -22,7 +22,7 @@ print(places2visit)
 places2visit.reverse()
 print(places2visit)
 #6
-places2visit.sort
+places2visit.sort()
 print(places2visit)
 #7
 places2visit.sort(reverse=True)
