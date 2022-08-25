@@ -1,0 +1,5 @@
+# Create a list from 1 - 1000000 and use your stats tools to find the min(), max(), and the total sum()
+million = list(range(1,1000001))
+print(min(million))
+print(max(million))
+print(sum(million))
