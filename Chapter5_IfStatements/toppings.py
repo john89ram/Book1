@@ -10,4 +10,4 @@ if requested_toppings != 'anchovies':
 
 requested_toppings = ['mushrooms','onions','pineapple']
 
-# In the Python environment you can call "'mushrooms' in requested_toppings" and 
+# In the Python environment you can call "'mushrooms' in requested_toppings" and Python will return "True"
