@@ -10,8 +10,8 @@ print(car == 'audi')
 # Now create 10 of your own.
 ages = list(range(1,66))
 
-user_age1 = 15
-user_age2 = 21
+user_age1 = 45
+user_age2 = 5
 
 age_pg13 = 13
 age_drive = 16
