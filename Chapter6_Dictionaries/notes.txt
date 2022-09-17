@@ -1,0 +1,20 @@
+A dictionary in Python is a collection of 'key-value pairs'. 
+This means that when creating dictionaries that the key must be created in 2s attached to its value.
+    - The name of the 'key' (color, name, points, etc.)
+    - And the 'value' itself (green, john, 5, etc.)
+
+When you call a dictionary key it will spit out its value 
+    - A key's value can contain a number, string, a list, or even another dictionary.
+
+You can create a dictionary with these braces {} with key-value pairs inside.
+    Dictionaries can hold limitless amount of key-value pairs.
+
+alien_0 = {'color':'green'}
+
+To grab the value associated with a key, you must give the name of the dictionary and then place the key inside of 
+square brackets.
+    print(alien_0['color'])
+The dictionary ^     ^ and the key - this will call the value of the key for that dictionary
+
+OUTPUT:
+green
