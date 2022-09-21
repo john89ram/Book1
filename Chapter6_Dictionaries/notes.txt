@@ -5,9 +5,14 @@ This means that when creating dictionaries that the key must be created in 2s at
 
 When you call a dictionary key it will spit out its value 
     - A key's value can contain a number, string, a list, or even another dictionary.
-
+    *** Dictionaries can be override when creating new key-value pairs.
+    
 You can create a dictionary with these braces {} with key-value pairs inside.
     Dictionaries can hold limitless amount of key-value pairs.
+
+Removing key-value pairs 
+    To remove information inside a dictionary that is no longer needed you can delete (as a whole or by key).
+    del alien_0['points']
 
 alien_0 = {'color':'green'}
 
@@ -18,3 +23,4 @@ The dictionary ^     ^ and the key - this will call the value of the key for tha
 
 OUTPUT:
 green
+
