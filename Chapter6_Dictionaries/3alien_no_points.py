@@ -9,3 +9,8 @@ alien_0 = {'color': 'green','speed': 'slow'}
 point_value = alien_0.get('points', 'No point value assigned.')
 print(point_value)
 
+# Here you can see that we set the variable "point_value" to a get() method for the alien_0 dictionary.
+    # It set to find the 'point' key in the dictionary, and should return the value if it was set. 
+    # Since no 'point' key was created it will return "No point value assigned"
+
+# This is a great tool to have when your code grows and you need to find if a key-value pair is missing
