@@ -11,3 +11,15 @@ favorite_languages = {
 # Now lets print out the favorite language of someone within the poll
 language = favorite_languages['sarah'].title()
 print(f"Sarah's favorite language is {language}.")
+
+#-------------------- Continue after 4user.py --------------------------
+    
+# Now we're going to take what we learned in 4user.py and use it to make our code more dynamic.
+
+for name, language in favorite_languages.items():
+    print(f"{name.title()}'s favorite language is {language.title()}.")
+
+# Now that we able to print both key, value pairs, lets try to print just the names of this group.
+
+for name in favorite_languages.keys():
+    print(name.title())

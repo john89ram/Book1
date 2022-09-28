@@ -10,8 +10,8 @@ programming_terms = {
     "print()": "a function that literally prints the result to the screen.",
     }
 
-print(f"Variable-\n\t{programming_terms['variable']}.")
-print(f"\nList-\n\t{programming_terms['list']}.")
-print(f"\nDictionary-\n\t{programming_terms['dictionary']}.")
-print(f"\nFunction-\n\t{programming_terms['function']}.")
-print(f"\nprint()-\n\t{programming_terms['print()']}.")
+print(f"Variable-\n{programming_terms['variable']}.")
+print(f"\nList-\n{programming_terms['list']}.")
+print(f"\nDictionary-\n{programming_terms['dictionary']}.")
+print(f"\nFunction-\n{programming_terms['function']}.")
+print(f"\nprint()-\n{programming_terms['print()']}.")
