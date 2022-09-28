@@ -20,6 +20,7 @@ for name, language in favorite_languages.items():
     print(f"{name.title()}'s favorite language is {language.title()}.")
 
 # Now that we able to print both key, value pairs, lets try to print just the names of this group.
-
+    # The .key() method is a formality, however
 for name in favorite_languages.keys():
     print(name.title())
+
