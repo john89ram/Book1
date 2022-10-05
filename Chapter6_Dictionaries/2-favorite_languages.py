@@ -42,4 +42,25 @@ for name in favorite_languages.keys():
         # Lastly once the friend is found the code will print an additional sentence and use the key(name),
             # as well as the value(language) from the dictionary.
 
- 
+if 'erin' not in favorite_languages.keys():
+    print("Erin, please take our poll!")
+
+# Now lets learn how to loop through a dictionary in particular orders
+    # Lets mix our sort() method and see what happens
+
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+    # Here we sorted the favorite_languages dictionary (only the keys)
+        # Then we printed every name with the title format, and thanked them.
+
+# Next lets loop through the values
+
+print("The following languages have been mentioned:")
+for language in favorite_languages.values():
+    print(language.title())
+    # As you can see Python was chosen twice, this can be annoying when dealing with huge data sets, lets fix that
+
+# When only looking for unique sets use the set() method
+for language in set(favorite_languages.values()):
+    print(language.title())
+    # Much cleaner - clean code is always appreciated 
