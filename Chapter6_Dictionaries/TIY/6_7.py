@@ -7,6 +7,3 @@ main_character2 = {'first_name': 'jonathan', 'last_name': 'ramirez', 'age': 33, 
 main_character3 = {'first_name': 'micheal', 'last_name': 'ramirez', 'age': 9, 'city': 'cedar park'}
 
 people = [main_character, main_character2, main_character3]
-
-for name, user_info in people.items():
-    
