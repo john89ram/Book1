@@ -1,13 +1,12 @@
-# People - We are going to expand on TIY 6.1.
-    # This time we can going to add 2 more members as separate dictionaries and then add them to a list named "people"
-    # Loop through the list of people 
-        # Inside the loop print all the information we have on each person
+# People - Take the what you have learned from exercise 7 as well as the TIY 6.1 and make 2 more dictionaries entries of other people. 
+    # Store all 3 people in a list called "people".
+    # Lastly loop through the list and print all the information that was learned about them.
 
-person1 = {'first_name': 'ashley', 'last_name': 'ramirez', 'age': 31}
-person2 = {'first_name': 'andrew', 'last_name': 'valerio', 'age': 32}
-person3 = {'first_name': 'micheal', 'last_name': 'ramirez', 'age': 9}
+main_character = {'first_name': 'ashley', 'last_name': 'ramirez', 'age': 31, 'city': 'leander'}
+main_character2 = {'first_name': 'jonathan', 'last_name': 'ramirez', 'age': 33, 'city': 'austin'}
+main_character3 = {'first_name': 'micheal', 'last_name': 'ramirez', 'age': 9, 'city': 'cedar park'}
 
-people = [person1, person2, person3]
+people = [main_character, main_character2, main_character3]
 
-for person in people:
-    print(person)
+for name, user_info in people.items():
+    
