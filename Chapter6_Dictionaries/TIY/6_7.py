@@ -11,6 +11,6 @@ people = [main_character, main_character2, main_character3]
 for person in people:
     full_name = f"{person['first_name']} {person['last_name']}"
     birth_place = f"{person['city']}"
-    print(f"\nTHis is {full_name.title()}, and they are {person['age']} years old. They were born at {birth_place.title()}.")
+    print(f"\nThis is {full_name.title()}, and they are {person['age']} years old. They were born at {birth_place.title()}.")
 
-print(f"It is nice to meet all of you!")
+print(f"\nIt is nice to meet all of you!")

@@ -23,6 +23,8 @@ cities = {
         },
 }
 
-for city in cities:
-    name = f"{city}"
-    print(f"\n{name.title()}")
+for city, city_info in cities.items():
+    country = city_info['country']
+    pop = city_info['population']
+    fact = city_info['fact']
+    print(f"\nIn {country.title()}, {city.title()} they have a population of {pop}. One interesting fact about {city.title()}, is that they are {fact}.")
