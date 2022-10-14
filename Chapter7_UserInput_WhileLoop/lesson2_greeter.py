@@ -11,6 +11,4 @@ prompt += "\nWhat is your name?"
 
 name = input(prompt)
 print(f"\nHello, {name.title()}!")
-# This program will set the variable "prompt" as a message and the "+=" will append an additional message to the "prompt" message.
-    # Afterwards we will ask the user for input and it will print our "prompt" message
-    # We assign the users input to "name" and print a personal message
+# Is this program we set the variable "prompt" as a message and the "+=" will append the following to the "prompt" message.
