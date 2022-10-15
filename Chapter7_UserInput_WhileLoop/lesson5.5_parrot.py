@@ -10,3 +10,7 @@ message = ""
 while message != 'quit':
     message = input(prompt)
     print(f"\n{message}")
+
+    if message != 'quit':
+        print(message)
+        
