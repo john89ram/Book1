@@ -9,3 +9,7 @@ while current_number < 10:
         continue
 
     print(current_number)
+# In this program we set the "current_number" to 0, and create a while loop to stay open until the number hits 10
+    # then it will continue to add 1 to the current number. (this is basics)
+    # but afterwards we created an if statement to divide the current number by 2 (with no returns) and if that is true the program will "continue"
+    # this will reset the program back to the top of the loop, if false it will print the current number (which should print all odd numbers).
