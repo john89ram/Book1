@@ -10,3 +10,6 @@ def describe_pet(pet_name, animal_type='dog'):
 describe_pet('Willie')
 describe_pet(pet_name='Harry')
 describe_pet(pet_name='Harry', animal_type='hamster')
+
+# Equivalent function calls - You can also call by parameter location as well without needing to list the keyword value.
+describe_pet('james', 'lizard')
