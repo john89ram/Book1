@@ -18,8 +18,8 @@ while True:
         break
 
     user_album = make_album(art_name, alb_name)
-    print(user_album)
-    print("Would you like to create another album?")
+    print(f"\n{user_album}")
+    print("\nWould you like to create another album?")
     print("Press 'y' for yes and 'q' to quit.")
     another_album = input('y/q: ')
     if another_album == 'y':
