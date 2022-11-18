@@ -17,5 +17,7 @@
         "listexp",
         "tegan",
         "varon"
-    ]
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100
 }
