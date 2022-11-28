@@ -1,4 +1,5 @@
-# Sending messages - 
+# Sending messages - Take 8.9 and lets write another function called 'send_messages' that prints
+    # text_messages and moves to a new list called 'sent_messages' as they are printed. 
 
 def send_messages(text_messages, sent_messages):
     """
@@ -14,8 +15,6 @@ def show_messages(sent_messages):
     """
     for messages in sent_messages:
         print(messages)
-
-
 
 
 text_messages = ['Hey, babe it did it again.', 
