@@ -2,7 +2,7 @@
     # Lets create a simple function that explores this concept.
 
 def build_person(first_name, last_name):
-    """ This function will take basic information for a person"""
+    """This function will take basic information for a person"""
     person = {'first': first_name, 'last': last_name}
     return person
 
