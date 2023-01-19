@@ -8,7 +8,7 @@ def build_profile(first, last, **user_info):
 
 user_profile = build_profile('albert', 'einstein', 
 # Here after the names parameters "first/last_names", the user added location and field.
-    # Similar to this example all that is needed is the parameter and the data linked to it.
+    # Similar to this example all that is needed is key(name)-value pair.
                             location = "princeton",
                             field = "physics")
 
