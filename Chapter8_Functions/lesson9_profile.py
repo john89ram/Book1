@@ -1,4 +1,4 @@
-# Here we use the "**" to create an empty dictionary to accept any keyword arguments.
+# Here we use the "**" to create an empty dictionary to accept any name-value pairs.
     # This is helpful when we are unsure to the amount of data that will be entered.
 def build_profile(first, last, **user_info):
     """Build a dictionary containing everything we know about a user."""
