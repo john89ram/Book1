@@ -1,0 +1,16 @@
+Importing a module
+import module_name.py
+    (This will make all functions within this .py to used in your program)
+    You can also import certain functions within the module without importing the whole with the from request.
+from module_name import function_name
+    or you can pull multiple functions from the same module
+from module_name import function_0, function_1, function_2
+    when importing the function by name you would no longer need to call it by using the formal way.
+    examples are showed below
+
+Calling a function inside a module (formal)    
+module_name.function_name()
+    This is important to remember as modules might have a ton of functions within them.
+    
+Calling a function directly import from module
+function_name()
