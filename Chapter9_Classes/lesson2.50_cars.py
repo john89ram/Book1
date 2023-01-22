@@ -35,6 +35,11 @@ class Car:
         else:
             print("You  can't roll back back an odometer!")
 
+    # 3 Let show the last example by adding "miles" by increments to the current mileage. 
+    def increment_odometer(self, miles):
+        """Add the given amount to the odometer reading."""
+        self.odometer_reading += miles
+
 my_new_car = Car("audi", "a4", 2019)
 print(my_new_car.get_descriptive_name())
 my_new_car.read_odometer()
@@ -46,4 +51,13 @@ my_new_car.read_odometer()
 
 # Ex. 2
 my_new_car.update_odometer(45)
+my_new_car.read_odometer()
+
+# Extended mileage check (enter mileage under the current mileage, result should trigger else)
+my_new_car.update_odometer(12)
+
+# Ex. 3
+    # With the increment method we just created lets add 100 miles to our current mileage.
+my_new_car.read_odometer()
+my_new_car.increment_odometer(100)
 my_new_car.read_odometer()
