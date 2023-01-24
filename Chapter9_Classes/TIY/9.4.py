@@ -46,9 +46,15 @@ class Restaurant:
 restaurant = Restaurant("Silly Chilly", "Mexican")
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
+# Test for default number served should = 0
 restaurant.number_served()
+# Set base to 10 customers
 restaurant.set_number_served(10)
+# Test for set number served to under what is recorded - should fail
 restaurant.set_number_served(5)
+# served = 10
 restaurant.number_served()
+# Add 15 for todays number of customers served
 restaurant.increment_number_served(15)
+# served = 25
 restaurant.number_served()
