@@ -25,6 +25,6 @@ class Restaurant:
         """Simple message to indicate that a restaurant is open"""
         print(f"The {self.name} is now open!")
 
-    def set_number_served(self):
+    def set_number_served(self, served_customers):
         """Able to set the number of customers that have been served"""
         
