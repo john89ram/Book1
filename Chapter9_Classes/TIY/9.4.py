@@ -15,7 +15,6 @@ class Restaurant:
         """Initialize the attributes of the restaurant"""
         self.name = restaurant_name
         self.cuisine = cuisine_type
-        self.number_served = 0
 
     def describe_restaurant(self):
         """Simple return of the attributes of the restaurant."""
@@ -24,7 +23,3 @@ class Restaurant:
     def open_restaurant(self):
         """Simple message to indicate that a restaurant is open"""
         print(f"The {self.name} is now open!")
-
-    def set_number_served(self, served_customers):
-        """Able to set the number of customers that have been served"""
-        
