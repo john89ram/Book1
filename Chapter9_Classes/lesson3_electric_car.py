@@ -42,4 +42,14 @@ class Car:
 class Electric_car(Car):
     # Here ---------^ we see how the child class references the parent class above. 
     """ Represent aspects of a car, specific to electric vehicles. """
-    
+    def __init__(self, make, model, year):
+        """ Initialize attributes of the parent class """
+        super().__init__(make, model, year)
+        # ^--- This is a special method that will allow this class to pull all methods from
+            # the parent class.
+
+my_tesla = Electric_car("tesla", "model 3", 2019)
+print(my_tesla.get_descriptive_name())
+# As you can see from our test that when we create an electric car with our class we can still
+    # use all the same methods from the Car class. These child classes can help separate and 
+    # specialize your code.
