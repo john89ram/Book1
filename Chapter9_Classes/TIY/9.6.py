@@ -39,13 +39,16 @@ class Restaurant:
 class IceCreamStand(Restaurant):
     """ A child class to simply explain a Ice Cream Stand """
 
-    def __init__(self, *flavors):
+    def __init__(self, restaurant_name, cuisine_type, *flavors):
         """Initialize the attributes of an Ice Cream Stand"""
+        super().__init__(restaurant_name, cuisine_type)
         self.flavors = flavors
 
     def list_flavors(self):
         """Print all flavors that """
         print(self.flavors)
 
-todays_flavors = IceCreamStand("vanilla", "chocolate", "strawberry", "mint")
-todays_flavors.list_flavors()
+dj_ice_cream_shop = IceCreamStand("DJ's Ice Cream Shop", "desert" ,"vanilla", "chocolate", "strawberry", "mint")
+dj_ice_cream_shop.describe_restaurant()
+dj_ice_cream_shop.open_restaurant()
+dj_ice_cream_shop.list_flavors()
