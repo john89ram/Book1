@@ -52,13 +52,13 @@ class Admin(User):
             print("- " + privilege)
 
 
-eric = Admin('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')
-eric.describe_user()
+john = Admin('john', 'ramirez', 'jramirez', 'jramirez@fakeemail.com', 'Texas')
+john.describe_user()
 
-eric.privileges = [
+john.privileges = [
     'can reset passwords',
     'can moderate discussions',
     'can suspend accounts',
     ]
 
-eric.show_privileges()
+john.show_privileges()
