@@ -8,3 +8,7 @@ print(my_beetle.get_descriptive_name())
 
 my_tesla = lesson4_car.Electric_car('tesla', 'roadster', 2019)
 print(my_tesla.get_descriptive_name())
+
+# You can also import all Classes in a module by using
+    # "from module import *" 
+    # This way you can continue to program as we did earlier without the dot notation.
