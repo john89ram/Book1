@@ -11,8 +11,7 @@ class Die:
         
     def roll_dice(self):
         """Represents a roll of the die"""
-        lucky_number = randint(1, self.sides)
-        return lucky_number
+        return randint(1, self.sides)
     
 num_roll = range(10)
 
