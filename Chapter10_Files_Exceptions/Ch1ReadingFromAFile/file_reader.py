@@ -14,8 +14,8 @@ print(contents)
 
 # When dealing with absolute paths it is usually best to assign it to a variable.
 file_path = 'Chapter10_Files_Exceptions/Ch1ReadingFromAFile/pi_digits.txt'
+# Here we can print the txt line by line to easily search for data we might need to.
 
 with open(file_path) as file_object:
-    contents = file_object.read()
-
-print(contents)
+    for line in file_object:
+        print(line)
