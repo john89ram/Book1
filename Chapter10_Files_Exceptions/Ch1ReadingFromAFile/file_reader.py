@@ -12,6 +12,7 @@ print(contents)
 #
 #print(contents)
 
+# When dealing with absolute paths it is usually best to assign it to a variable.
 file_path = 'Chapter10_Files_Exceptions/Ch1ReadingFromAFile/pi_digits.txt'
 
 with open(file_path) as file_object:
