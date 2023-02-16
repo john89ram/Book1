@@ -1,6 +1,6 @@
-import os
+# This only works if both files are in the same directory.
 
-print(os.getcwd())
+with open('pi_digits.txt') as file_object:
+    contents = file_object.read()
 
-os.chdir('/Chapter10_File_Exceptions')
-print(os.getcwd())
+print(contents)
