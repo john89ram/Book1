@@ -11,3 +11,10 @@ print(contents)
 #    contents = file_object.read()
 #
 #print(contents)
+
+file_path = 'Chapter10_Files_Exceptions/Ch1ReadingFromAFile/pi_digits.txt'
+
+with open(file_path) as file_object:
+    contents = file_object.read()
+
+print(contents)
