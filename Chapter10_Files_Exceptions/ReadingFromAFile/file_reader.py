@@ -41,7 +41,7 @@ with open(file_path) as file_object:
 # We just assigned the readlines output to the "lines" variable.
     # Now we can just print it whenever we might need it.
 for line in lines:
-    print(line.rstrip())
+    print(f"\n{line.rstrip()}")
 
 #---------------------------------------------------------------------------------------------------
 
