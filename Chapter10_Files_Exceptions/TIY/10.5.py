@@ -17,6 +17,6 @@ while True:
         poll_results = input("What do you enjoy about programming? ")
         with open(program_poll, 'a') as f:
             f.write(f"{poll_results}\n")
-        
+
     else:
         print('I am sorry you can only choose "yes" or "no".')
