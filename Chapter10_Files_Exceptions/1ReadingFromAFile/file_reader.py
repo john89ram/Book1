@@ -3,7 +3,7 @@
 
 # This only works if both files are in the same directory.
 # Can be used path to locate file if Python evnr running in parent directory.
-with open('Chapter10_Files_Exceptions/ReadingFromAFile/pi_digits.txt') as file_object:
+with open('Chapter10_Files_Exceptions/1ReadingFromAFile/pi_digits.txt') as file_object:
     contents = file_object.read()
 
 print(f"\n{contents}")
@@ -22,7 +22,7 @@ print(f"\n{contents}")
 ### Reading line by line ###
 
 # When dealing with absolute paths it is usually best to assign it to a variable.
-file_path = 'Chapter10_Files_Exceptions/ReadingFromAFile/pi_digits.txt'
+file_path = 'Chapter10_Files_Exceptions/1ReadingFromAFile/pi_digits.txt'
 # Here we can print the txt line by line to easily search for data we might need to.
 
 with open(file_path) as file_object:
@@ -76,7 +76,7 @@ print(len(pi_string2))
 
 ### Large files: One million digits ###
 
-filename = 'Chapter10_Files_Exceptions/ReadingFromAFile/pi_million_digits.txt'
+filename = 'Chapter10_Files_Exceptions/1ReadingFromAFile/pi_million_digits.txt'
 
 with open(filename) as file_object:
     mil_lines = file_object.readlines()
