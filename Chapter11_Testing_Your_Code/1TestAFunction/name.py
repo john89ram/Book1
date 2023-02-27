@@ -1,7 +1,4 @@
 from name_function import get_formatted_name
-import os
-
-os.chdir('Chapter11_Testing_Your_Code/1TestAFunction/')
 
 print(" Enter 'q' at any time to quit.")
 while True:
@@ -14,4 +11,3 @@ while True:
 
     formatted_name = get_formatted_name(first, last)
     print(f"\tNeatly formatted name: {formatted_name}.")
-
