@@ -3,10 +3,6 @@ import pygame
 from settings import Settings
 from ship import Ship
 
-#------------------------------------------------------------------------------------------------------
-
-### Creating a pygame window and responding to user input ###
-
 class AlienInvasion:
     """Overall class to manage game assets and behavior."""
 
@@ -26,14 +22,15 @@ class AlienInvasion:
 
         # Draw ship to the screen
         self.ship = Ship(self)
+        self.bullets = pygame.sprite.Group()
 
     def run_game(self):
         """Start the main loop for the game."""
         while True:
             self._check_events()
             self.ship.update()
+            self.bullets.update()
             self._update_screen()
-
 
     def _check_events(self):
         """Respond to keypress and mouse events."""
