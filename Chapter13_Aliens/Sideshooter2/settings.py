@@ -18,11 +18,11 @@ class Settings:
         self.lives_limit = 3
 
         # Bullet settings
-        self.bullet_s = 1
+        self.bullet_s = 3
         self.bullet_w = 15
         self.bullet_h = 3
         self.bullet_color = (60,60,60)
-        self.bullet_count = 2
+        self.bullet_count = 4
 
         # Snake settings
         self.snake_speed = 0.5

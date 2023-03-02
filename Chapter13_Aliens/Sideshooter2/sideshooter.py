@@ -74,6 +74,9 @@ class SideShooter:
 
     def _update_snakes(self):
         self.snakes.update()
+        for snake in self.snakes.copy():
+            if snake.rect.right <= 0:
+                self.snakes.remove(snake)
         if pygame.sprite.spritecollideany(self.cowboy, self.snakes):
             self._snake_bite()
 
