@@ -12,7 +12,8 @@
         "keyup",
         "pikachu",
         "pygame",
-        "sharkbait"
+        "sharkbait",
+        "Sideshooter"
     ],
     "cSpell.ignoreWords": [
         "blas",
