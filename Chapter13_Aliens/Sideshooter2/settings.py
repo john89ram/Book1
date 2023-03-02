@@ -1,5 +1,6 @@
 # settings.py
 # File to modify all settings in SideShooter
+from random import randint
 
 class Settings:
     """A class to store all the settings for SideShooter"""
@@ -14,6 +15,7 @@ class Settings:
 
         # Cowboy's movement speeds
         self.cowboy_s = 1.5
+        self.lives_limit = 3
 
         # Bullet settings
         self.bullet_s = 1
@@ -21,3 +23,6 @@ class Settings:
         self.bullet_h = 3
         self.bullet_color = (60,60,60)
         self.bullet_count = 2
+
+        # Snake settings
+        self.snake_speed = 0.5

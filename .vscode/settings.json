@@ -7,13 +7,15 @@
         "daymian",
         "ducati",
         "fullscreen",
+        "groupcollide",
         "jimi",
         "johnram",
         "keyup",
         "pikachu",
         "pygame",
         "sharkbait",
-        "Sideshooter"
+        "Sideshooter",
+        "spritecollideany"
     ],
     "cSpell.ignoreWords": [
         "blas",

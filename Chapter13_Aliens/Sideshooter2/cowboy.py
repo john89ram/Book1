@@ -30,6 +30,10 @@ class Cowboy:
 
         self.rect.y = self.y
 
+    def center_pos(self):
+        self.rect.midleft = self.screen_rect.midleft
+        self.y = float(self.rect.y)
+
     def blitme(self):
         """Draw the cowboy at its current location."""
         self.screen.blit(self.image, self.rect)
