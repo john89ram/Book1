@@ -116,7 +116,7 @@ class AlienInvasion:
         alien = Alien(self)
         alien_width, alien_height = alien.rect.size
         available_space_x = self.settings.screen_width - (2 * alien_width)
-        number_aliens_x = available_space_x // (2 * alien_width)\
+        number_aliens_x = available_space_x // (2 * alien_width)
         
         # Determine the number of rows of aliens that fir on the screen
         ship_height = self.ship.rect.height
