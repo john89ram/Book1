@@ -6,6 +6,7 @@
 import sys
 import pygame
 from settings import Settings
+from drop import Drop
 
 class Raindrops:
     """OVerall class to manage scene assets and behavior"""
@@ -16,13 +17,14 @@ class Raindrops:
         self.screen = pygame.display.set_mode((self.settings.screen_width,
                                               self.settings.screen_height))
         
-        # Include sprite group for rain here
+        self.drop = pygame.sprite.Group()
+        self._create_rain()
 
     def run_scene(self):
         """Main animation loop"""
         while True:
             self._update_events()
-
+            self._update_drops()
             self._update_screen()
 
     def _update_events(self):
@@ -30,9 +32,29 @@ class Raindrops:
             if event.type == pygame.QUIT:
                 sys.exit()
 
+    def _create_rain(self):
+        drop = Drop(self)
+        drop_w, drop_h = drop.rect.size
+
+        available_x = self.settings.screen_width
+        num_drops_x = available_x//drop_w
+
+        for drop_num in range(num_drops_x):
+            self._create_drop(drop_num)
+
+    def _create_drop(self, drop_num):
+        drop = Drop(self)
+        drop_w, drop_h = drop.rect.size
+        drop.x = drop_w*drop_num
+        drop.rect.x = drop.x
+        self.drop.add(drop)
+
+    def _update_drops(self):
+        self.drop.update()
+
     def _update_screen(self):
         self.screen.fill(self.settings.bg_color)
-
+        self.drop.draw(self.screen)
 
 
         pygame.display.flip()
