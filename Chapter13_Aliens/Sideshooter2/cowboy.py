@@ -1,3 +1,4 @@
+# cowboy.py
 # Program to handle the cowboy assets
 import pygame
 

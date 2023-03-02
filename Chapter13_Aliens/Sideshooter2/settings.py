@@ -1,3 +1,4 @@
+# settings.py
 # File to modify all settings in SideShooter
 
 class Settings:

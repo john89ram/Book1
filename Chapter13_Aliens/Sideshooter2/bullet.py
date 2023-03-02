@@ -1,3 +1,4 @@
+# bullet.py
 # File to handle bullet assets
 
 import pygame

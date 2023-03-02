@@ -1,15 +1,10 @@
-# 13-6 Game over
-    # In Sideshooter, keep track of the number of times the player is hit
-        # and number of time the enemy is hit by the player.
-    # Decide on an appropriate condition for ending the game, and stop the game when this event occurs.     
-# Main game file
-
-import sys
 import pygame
+import sys
 
 from settings import Settings
 from cowboy import Cowboy
 from bullet import Bullets
+from user_input import UserInput
 
 class SideShooter:
     """Overall class to manage main game assets and behaviors"""
@@ -26,46 +21,15 @@ class SideShooter:
 
         self.cowboy = Cowboy(self)
         self.bullets = pygame.sprite.Group()
+        self.user_input = UserInput(self.cowboy, self)
 
     def run_game(self):
         """Main game loop"""
         while True:
-            self._check_events()
+            self.user_input.check_events()
             self.cowboy.update()
             self._update_bullets()
             self._update_screen()
-            print(len(self.bullets))
-
-    def _check_events(self):
-        """Responds to key and mouse activity"""
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
-
-            elif event.type == pygame.KEYDOWN:
-                self._keydown_events(event)
-            elif event.type == pygame.KEYUP:
-                self._keyup_events(event)
-
-    def _keydown_events(self, event):
-        """Checks for keys pressed"""
-        if event.key == pygame.K_UP:
-            self.cowboy.moving_up = True
-        elif event.key == pygame.K_DOWN:
-            self.cowboy.moving_down = True
-
-        elif event.key == pygame.K_q:
-            sys.exit()
-
-        elif event.key == pygame.K_SPACE:
-            self._fire_bullet()
-
-    def _keyup_events(self, event):
-        """Check for keys released"""
-        if event.key == pygame.K_UP:
-            self.cowboy.moving_up = False
-        elif event.key == pygame.K_DOWN:
-            self.cowboy.moving_down = False
 
     def _fire_bullet(self):
         """Creating and adding bullets to group"""
@@ -89,7 +53,6 @@ class SideShooter:
             bullet.draw_bullet()
 
         pygame.display.flip()
-
 
 if __name__ == '__main__':
     ss = SideShooter()
