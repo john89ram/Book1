@@ -14,15 +14,15 @@ class Settings:
         self.bg_color = (161,95,59)
 
         # Cowboy's movement speeds
-        self.cowboy_s = 1.5
+        self.cowboy_s = 5
         self.lives_limit = 3
 
         # Bullet settings
-        self.bullet_s = 3
+        self.bullet_s = 6
         self.bullet_w = 15
         self.bullet_h = 3
         self.bullet_color = (60,60,60)
         self.bullet_count = 4
 
         # Snake settings
-        self.snake_speed = 0.5
+        #self.snake_speed = 1

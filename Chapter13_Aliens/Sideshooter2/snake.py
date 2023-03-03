@@ -23,5 +23,7 @@ class Snake(Sprite):
         self.x = float(self.rect.x)
 
     def update(self):
-        self.x -= (self.settings.snake_speed)
+        self.speed = float(randint(1,6))
+
+        self.x -= self.speed
         self.rect.x = self.x

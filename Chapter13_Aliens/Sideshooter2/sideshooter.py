@@ -36,7 +36,7 @@ class SideShooter:
     def run_game(self):
         """Main game loop"""
         while True:
-            self.clock.tick(240)
+            self.clock.tick(60)
             self.user_input.check_events()
             if self.stats.game_active:
                 self.cowboy.update()
