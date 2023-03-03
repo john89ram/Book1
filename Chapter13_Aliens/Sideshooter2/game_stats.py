@@ -8,8 +8,4 @@ class GameStats:
 
     def reset_stats(self):
         self.lives_left = self.settings.lives_limit
-
-    def lvl_stats(self):
-        
-        self.lvl = 0
         
