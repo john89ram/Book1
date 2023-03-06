@@ -1,3 +1,4 @@
+import json
 import pygame.font
 from pygame.sprite import Group
 
@@ -38,8 +39,11 @@ class Scoreboard:
 
     def check_high_score(self):
         """Check to see if there's a new high score"""
+        all_time_high_score = 'Chapter14_Scoring/Project_Alien_Invation_HS/high_score.json'
         if self.stats.score > self.stats.high_score:
             self.stats.high_score = self.stats.score
+            with open(all_time_high_score, 'w') as f:
+                json.dump(self.stats.high_score, f)
             self.prep_high_score()
 
     def prep_high_score(self):
