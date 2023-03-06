@@ -22,7 +22,7 @@ class AlienInvasion:
         #Enable fullscreen mode
         #self.screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
         #self.settings.screen_width = self.screen.get_rect().width
-        #self.settings.screen_height = self.screen.get_rect().height
+        #self.settings.scr een_height = self.screen.get_rect().height
 
         pygame.display.set_caption(" Alien Invasion")
 
@@ -142,7 +142,7 @@ class AlienInvasion:
         # If so, we will delete the bullet and the alien.
         collisions = pygame.sprite.groupcollide(
                         self.bullets, self.aliens,True, True)
-        
+         
         if collisions:
             for aliens in collisions.values():
                 self.stats.score += self.settings.alien_points * len(aliens)
